@@ -149,4 +149,3 @@ for SPLIT in SPLITS:
     # import pdb; pdb.set_trace()
     out_path = '{}/annotations/kitti_{}_{}.json'.format(DATA_PATH, SPLIT, split)
     json.dump(ret, open(out_path, 'w'))
-  
