@@ -1,5 +1,5 @@
 # finetune scripts for movenet
-cd /Users/rachel/PycharmProjects/movenet/src
+cd /data/ai/movenet/movenet/src
 # python main.py single_pose --exp_id yoga_movenet --dataset active --arch movenet --batch_size 24 --master_batch 4 --lr 5e-4 --gpus 0,1,2,3 --num_epochs 150 --lr_step 30 60 90 --num_workers 16 --load_model ../models/movenet.pth
 # test   7e -3   5e-3  1e-3  5e-4  1e-4
 # python test.py single_pose --exp_id yoga_movenet --dataset active --arch movenet --resume
