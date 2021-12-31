@@ -75,6 +75,7 @@ class ACTIVE(data.Dataset):
         self.opt = opt
 
         print('==> initializing {} {} data.'.format(opt.dataset, split))
+        print('\n debug: self.annot_path:',self.annot_path)
         self.coco = coco.COCO(self.annot_path)
         image_ids = self.coco.getImgIds()
 
