@@ -129,7 +129,7 @@ class ACTIVE(data.Dataset):
             keypoints = keypoints.reshape(51).tolist()
             keypoints = list(map(self._to_float, keypoints))
             detection = {
-                "image_id": int(image_id),
+                "image_id": str(image_id),
                 "category_id": int(category_id),
                 "bbox": bbox_out,
                 "score": float("{:.2f}".format(score)),
